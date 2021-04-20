@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:chat_app/components/rounded_button.dart';
+import 'package:chat_app/screens/login_screen.dart';
+import 'package:chat_app/screens/registration_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
   static const id = "welcome_screen";
@@ -10,19 +13,28 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlueAccent,
+      backgroundColor: Colors.amber,
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 24.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Container(
-              child: Text('login'),
+            RoundedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, LoginScreen.id);
+              },
+              color: Colors.lightBlueAccent,
+              title: 'Login',
             ),
-            Container(
-              child: Text('register'),
-            ),
+            RoundedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, RegistrationScreen.id);
+              },
+              color: Colors.lightBlue,
+              title: 'Register',
+            )
+           ,
           ],
         ),
       ),
