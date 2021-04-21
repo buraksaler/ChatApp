@@ -22,6 +22,10 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            Image.asset(
+              'images/logo.png',
+              scale: 1.5,
+            ),
             TextField(
               keyboardType: TextInputType.emailAddress,
               textAlign: TextAlign.center,

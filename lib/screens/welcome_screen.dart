@@ -21,6 +21,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            Image.asset(
+              'images/logo.png',
+              scale: 1.5,
+            ),
             RoundedButton(
               onPressed: () {
                 Navigator.pushNamed(context, LoginScreen.id);
