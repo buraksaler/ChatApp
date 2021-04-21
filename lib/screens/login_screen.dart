@@ -1,3 +1,4 @@
+import 'package:chat_app/components/rounded_button.dart';
 import 'package:flutter/material.dart';
 import 'package:chat_app/constants.dart';
 
@@ -14,7 +15,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white70,
+      backgroundColor: Colors.white,
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 24.0),
         child: Column(
@@ -40,6 +41,16 @@ class _LoginScreenState extends State<LoginScreen> {
                 password = value;
               },
               decoration: kTextFieldDecoration.copyWith(hintText: 'Enter your password'),
+            ),
+            SizedBox(
+              height: 8.0,
+            ),
+            RoundedButton(
+              color: Colors.lightBlueAccent,
+              title: 'Login',
+              onPressed: () {
+                //to be completed
+              },
             ),
           ],
         ),
