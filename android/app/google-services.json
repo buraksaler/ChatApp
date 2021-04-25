@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "962883424843",
+    "project_id": "chatapp-d5325",
+    "storage_bucket": "chatapp-d5325.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962883424843:android:faed99835f72d70e4933ce",
+        "android_client_info": {
+          "package_name": "com.buraskaler.chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962883424843-al09a8ho6ftmpee8uvh6nljvv40nt5pk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApD6yJs-UzxAsTsbVvgdrNu_sjqSZVWv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962883424843-al09a8ho6ftmpee8uvh6nljvv40nt5pk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
